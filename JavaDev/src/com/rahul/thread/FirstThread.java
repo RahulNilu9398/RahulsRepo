@@ -7,6 +7,13 @@ public class FirstThread {
         Thread anotherThread=new AnotherThread();
         anotherThread.start();
 
+        Thread thread=new Thread(){
+            public void run(){
+                System.out.println("Hi from anonymous");
+            }
+        };
+        thread.start();
+
         System.out.println("Hello again from First Thread");
 
     }
